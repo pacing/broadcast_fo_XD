@@ -1,0 +1,86 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+body     {
+          /*background-color: #B1B1B1; */
+          position: relative;
+          left:   0;
+          top:    0;
+          right:  0;
+          margin  0;
+          padding 0;
+         }
+#header {
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        background-color: #988000;
+        height:        auto;
+        border-color: #0018C0;
+        border-style: dotted;
+        border-top-style: dotted;
+        border-left-style: dotted;
+        border-bottom-width: 3px;
+        border-bottom-color: #040300;
+        border-bottom-style: solid;
+        overflow: auto;
+        font-size: 300%;
+        text-decoration: none;
+        padding-top:    0.12cm;
+        text-align:   left;
+}
+.title {
+         cursor: pointer;
+
+}
+.left {
+        height:       15cm;
+        margin-top:   0.05cm;
+        margin-right: 8cm;
+        border-color: #040300;
+        border-style: solid;
+        overflow: scroll;
+}
+.right {
+        position:       absolute;
+        right:          0px;
+        top:            68px;
+        height:         15cm;
+        width:          7.8cm; 
+        margin-top:     0.05cm;
+        border-color:   #403000;
+        border-style:   solid;
+        overflow:       auto;
+}
+.link {
+        margin-top:      -20px;
+        margin-left:     20px;
+        font-size:      30pt;
+        line-height:    150%; 
+        font-weight:    bold;
+        font-color:     black;
+}
+#main {
+        background-image: url(http://localhost:3000/images/bkimages.jpg);
+}
+fieldset {
+       background:  #ddd;
+       height:      6.0cm;
+       width:       5cm; 
+       margin-left:  -2cm;
+       margin-top:   -5px;
+}
+legend  {
+      font-size:  20pt;
+}

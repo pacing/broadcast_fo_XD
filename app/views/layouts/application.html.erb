@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="header">
+                <td class="title">
+                <th>西电小喇叭</th>
+                <th>校园导航站</th>
+</td>
+</div>
+<div id="main">
+<div class="left">
+<%= yield %>
+</div>
+<div class="right">
+<div class="link">
+     <ul>
+         <ol><%= link_to '失物招领' , :action => 'index', :remote => true,"data-type" => :json,:id => "update_foobar" %></ol>
+         <ol><%= link_to '寻物启示' , :action => 'index'%></ol>
+         <ol><%= link_to '信息发布' , :action => 'index'%></ol>
+         <ol><%= link_to '校园杂谈' , :action => 'index'%></ol>
+     <ul>
+<fieldset>
+<legend>优惠信息</legend>
+</fieldset>
+</div>
+</div>
+</div>
+</body>
+</html>
